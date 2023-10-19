@@ -12,7 +12,9 @@ about the members behaviours
 first make sure you install Docker 
 open the terminal and run
 ```
-docker-compose up 
+docker-compose build
+docker-compose start api
+docker-compose exec api npx prisma migrate dev
 ```
 ## API Reference
 
